@@ -30,8 +30,23 @@
     // ❗ Notes:
     // 🧠 There are many ways to solve this, but practice using a for loop to iterate over the array.
     // 🧠 As you have done in the past, declare a variable before you start looping, to accumulate the result.
-    function sumNumsFor()
-    
+    function sumNumsFor(nums) {
+      let answer = 0;
+
+      for (let idk = 0; idk < nums.length; idk++) {
+        let unknown = nums[idk];
+        if (typeof unknown === "number"){
+          if (unknown === 13){
+            return  "I'm too superstitious!"
+          }
+          answer += unknown;
+        }
+
+      }
+      return answer
+    }
+
+    sumNumsFor(2,3,6)
 
     // 👉 CHALLENGE 2
     // 🧠 The function stripVowels takes a string, strips all lowcase vowel letters (a,e,i,o,u) from it and returns it.
@@ -40,7 +55,7 @@
     // ❗ Notes:
     // 🧠 There are many ways to solve this, but practice using a for loop to iterate over the characters of the string.
     function stripVowels(str) {
-        let strings = ("a","e","i","o","u");
+
     }
 
     // 👉 CHALLENGE 3
@@ -49,6 +64,7 @@
     // sumNumsWhile([1, 2, 3]) // should return 6
     // sumNumsWhile([1, 2, 13]) // should return "I'm too superstitious!"
     function sumNumsWhile() {
+
     }
 
     // 👉 CHALLENGE 4
