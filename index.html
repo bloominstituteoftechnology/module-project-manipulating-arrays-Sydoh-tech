@@ -125,8 +125,15 @@
     // findEvenNums([0, 1, 2, 3, 4]) // should return [0, 2, 4]
     // ❗ Notes:
     // 🧠 Use any kind of loop you'd like and the push method to populate the array of even numbers.
-    function findEvenNums() {
-
+    function findEvenNums(integer) {
+        let evenArray = []
+        for (var i = 0; i < integer.length; i++) {
+          let num = integer[i];
+          if (num % 2 ===0)
+          evenArray.push(num)
+        
+        }
+        return evenArray
     }
 
     // 👉 CHALLENGE 6
