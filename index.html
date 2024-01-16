@@ -178,8 +178,28 @@
     // ❗ Notes:
     // 🧠 To capitalize a string you can use its toUpperCase method: "a".toUpperCase() returns "A"
     function nestedLoops(strings) {
+      let end = [];
 
+      for ( let lock in strings ) {
+        let word = strings[lock]
+
+        let newWord = ''
+        for (let lock in word){
+          let words = word[lock]
+
+          if (words === 'a' || words === 'e' || words === 'i' || words === 'o' || words === 'u'){
+          let UpperCased = words.toUpperCase()
+          newWord += UpperCased   
+        }
+        else{
+          newWord += words
+        }
+
+      }
+       end.push(newWord)
     }
+    return end
+  }
 
     // 👉 CHALLENGE 9
     // 🧠 The function crazyTrimmer takes an array as its argument.
